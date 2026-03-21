@@ -154,9 +154,9 @@ namespace PathOfPower.Procedural
                 case NodeType.Trap:
                     // 50% chance percentage trap, 50% flat
                     return rng.Next(2) == 0
-                        ? (float)Math.Round(rng.NextDouble() * 0.3 + 0.1, 2)  // 10-40% reduction
-                        : (float)Math.Round(baseEnemy * 0.4f, 0);              // flat reduction
-                case NodeType.Chest:      return (float)Math.Round(difficulty * rng.Next(5, 20), 0);
+                        ? (float)Math.Round((double)(rng.NextDouble() * 0.3 + 0.1), 2)  // 10-40% reduction
+                        : (float)Math.Round((double)(baseEnemy * 0.4f), 0);              // flat reduction
+                case NodeType.Chest:      return (float)Math.Round((double)(difficulty * rng.Next(5, 20)), 0);
                 default:                  return 0f;
             }
         }
