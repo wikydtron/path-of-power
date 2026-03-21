@@ -1,0 +1,57 @@
+{
+  "id": "level_03",
+  "name": "Trap Street",
+  "biome": "Crypt",
+  "startNodeId": 0,
+  "bossNodeId": 11,
+  "nodes": [
+    {
+      "id": 0, "type": "Start", "enemyType": "Basic", "power": 0,
+      "gridX": 2, "gridY": 0, "connections": [1, 2], "visited": false, "displayName": "Start"
+    },
+    {
+      "id": 1, "type": "Buff", "enemyType": "Basic", "power": 5,
+      "gridX": 1, "gridY": 1, "connections": [3, 4], "visited": false, "displayName": "+5"
+    },
+    {
+      "id": 2, "type": "Buff", "enemyType": "Basic", "power": 3,
+      "gridX": 3, "gridY": 1, "connections": [4, 5], "visited": false, "displayName": "+3"
+    },
+    {
+      "id": 3, "type": "Trap", "enemyType": "Basic", "power": 2,
+      "gridX": 0, "gridY": 2, "connections": [6], "visited": false, "displayName": "-2"
+    },
+    {
+      "id": 4, "type": "Enemy", "enemyType": "Basic", "power": 3,
+      "gridX": 2, "gridY": 2, "connections": [7], "visited": false, "displayName": "3"
+    },
+    {
+      "id": 5, "type": "Trap", "enemyType": "Basic", "power": 0.25,
+      "gridX": 4, "gridY": 2, "connections": [8], "visited": false, "displayName": "-25%"
+    },
+    {
+      "id": 6, "type": "Buff", "enemyType": "Basic", "power": 8,
+      "gridX": 0, "gridY": 3, "connections": [9], "visited": false, "displayName": "+8"
+    },
+    {
+      "id": 7, "type": "Multiplier", "enemyType": "Basic", "power": 2,
+      "gridX": 2, "gridY": 3, "connections": [9, 10], "visited": false, "displayName": "x2"
+    },
+    {
+      "id": 8, "type": "Enemy", "enemyType": "Basic", "power": 2,
+      "gridX": 4, "gridY": 3, "connections": [10], "visited": false, "displayName": "2"
+    },
+    {
+      "id": 9, "type": "Enemy", "enemyType": "Basic", "power": 8,
+      "gridX": 1, "gridY": 4, "connections": [11], "visited": false, "displayName": "8"
+    },
+    {
+      "id": 10, "type": "Buff", "enemyType": "Basic", "power": 15,
+      "gridX": 3, "gridY": 4, "connections": [11], "visited": false, "displayName": "+15"
+    },
+    {
+      "id": 11, "type": "Boss", "enemyType": "Boss", "power": 40,
+      "gridX": 2, "gridY": 5, "connections": [], "visited": false, "displayName": "BOSS\n40"
+    }
+  ]
+}

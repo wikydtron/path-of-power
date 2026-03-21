@@ -1,0 +1,53 @@
+{
+  "id": "level_02",
+  "name": "The Crossroads",
+  "biome": "Crypt",
+  "startNodeId": 0,
+  "bossNodeId": 10,
+  "nodes": [
+    {
+      "id": 0, "type": "Start", "enemyType": "Basic", "power": 0,
+      "gridX": 2, "gridY": 0, "connections": [1, 2, 3], "visited": false, "displayName": "Start"
+    },
+    {
+      "id": 1, "type": "Buff", "enemyType": "Basic", "power": 4,
+      "gridX": 0, "gridY": 1, "connections": [4], "visited": false, "displayName": "+4"
+    },
+    {
+      "id": 2, "type": "Enemy", "enemyType": "Basic", "power": 1,
+      "gridX": 2, "gridY": 1, "connections": [5], "visited": false, "displayName": "1"
+    },
+    {
+      "id": 3, "type": "Multiplier", "enemyType": "Basic", "power": 2,
+      "gridX": 4, "gridY": 1, "connections": [6], "visited": false, "displayName": "x2"
+    },
+    {
+      "id": 4, "type": "Enemy", "enemyType": "Basic", "power": 3,
+      "gridX": 0, "gridY": 2, "connections": [7], "visited": false, "displayName": "3"
+    },
+    {
+      "id": 5, "type": "Buff", "enemyType": "Basic", "power": 6,
+      "gridX": 2, "gridY": 2, "connections": [7, 8], "visited": false, "displayName": "+6"
+    },
+    {
+      "id": 6, "type": "Buff", "enemyType": "Basic", "power": 8,
+      "gridX": 4, "gridY": 2, "connections": [8], "visited": false, "displayName": "+8"
+    },
+    {
+      "id": 7, "type": "Buff", "enemyType": "Basic", "power": 5,
+      "gridX": 1, "gridY": 3, "connections": [9], "visited": false, "displayName": "+5"
+    },
+    {
+      "id": 8, "type": "Enemy", "enemyType": "Basic", "power": 6,
+      "gridX": 3, "gridY": 3, "connections": [9], "visited": false, "displayName": "6"
+    },
+    {
+      "id": 9, "type": "Buff", "enemyType": "Basic", "power": 3,
+      "gridX": 2, "gridY": 4, "connections": [10], "visited": false, "displayName": "+3"
+    },
+    {
+      "id": 10, "type": "Boss", "enemyType": "Boss", "power": 25,
+      "gridX": 2, "gridY": 5, "connections": [], "visited": false, "displayName": "BOSS\n25"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "level_08",
+  "name": "Mage's Tower",
+  "biome": "Crypt",
+  "startNodeId": 0,
+  "bossNodeId": 15,
+  "nodes": [
+    {
+      "id": 0, "type": "Start", "enemyType": "Basic", "power": 0,
+      "gridX": 2, "gridY": 0, "connections": [1, 2, 3], "visited": false, "displayName": "Start"
+    },
+    {
+      "id": 1, "type": "Buff", "enemyType": "Basic", "power": 8,
+      "gridX": 0, "gridY": 1, "connections": [4], "visited": false, "displayName": "+8"
+    },
+    {
+      "id": 2, "type": "Buff", "enemyType": "Basic", "power": 5,
+      "gridX": 2, "gridY": 1, "connections": [5], "visited": false, "displayName": "+5"
+    },
+    {
+      "id": 3, "type": "Multiplier", "enemyType": "Basic", "power": 2,
+      "gridX": 4, "gridY": 1, "connections": [6], "visited": false, "displayName": "x2"
+    },
+    {
+      "id": 4, "type": "Multiplier", "enemyType": "Basic", "power": 3,
+      "gridX": 0, "gridY": 2, "connections": [7], "visited": false, "displayName": "x3"
+    },
+    {
+      "id": 5, "type": "Enemy", "enemyType": "Mage", "power": 4,
+      "gridX": 2, "gridY": 2, "connections": [8], "visited": false, "displayName": "Mage 4"
+    },
+    {
+      "id": 6, "type": "Buff", "enemyType": "Basic", "power": 12,
+      "gridX": 4, "gridY": 2, "connections": [9], "visited": false, "displayName": "+12"
+    },
+    {
+      "id": 7, "type": "Enemy", "enemyType": "Basic", "power": 15,
+      "gridX": 0, "gridY": 3, "connections": [10], "visited": false, "displayName": "15"
+    },
+    {
+      "id": 8, "type": "Trap", "enemyType": "Basic", "power": 0.25,
+      "gridX": 2, "gridY": 3, "connections": [10, 11], "visited": false, "displayName": "-25%"
+    },
+    {
+      "id": 9, "type": "Enemy", "enemyType": "Mage", "power": 8,
+      "gridX": 4, "gridY": 3, "connections": [11], "visited": false, "displayName": "Mage 8"
+    },
+    {
+      "id": 10, "type": "Buff", "enemyType": "Basic", "power": 30,
+      "gridX": 1, "gridY": 4, "connections": [12], "visited": false, "displayName": "+30"
+    },
+    {
+      "id": 11, "type": "Multiplier", "enemyType": "Basic", "power": 2,
+      "gridX": 3, "gridY": 4, "connections": [13], "visited": false, "displayName": "x2"
+    },
+    {
+      "id": 12, "type": "Enemy", "enemyType": "Tank", "power": 30,
+      "gridX": 1, "gridY": 5, "connections": [14], "visited": false, "displayName": "30"
+    },
+    {
+      "id": 13, "type": "Buff", "enemyType": "Basic", "power": 60,
+      "gridX": 3, "gridY": 5, "connections": [14], "visited": false, "displayName": "+60"
+    },
+    {
+      "id": 14, "type": "Buff", "enemyType": "Basic", "power": 80,
+      "gridX": 2, "gridY": 6, "connections": [15], "visited": false, "displayName": "+80"
+    },
+    {
+      "id": 15, "type": "Boss", "enemyType": "Boss", "power": 320,
+      "gridX": 2, "gridY": 7, "connections": [], "visited": false, "displayName": "BOSS\n320"
+    }
+  ]
+}

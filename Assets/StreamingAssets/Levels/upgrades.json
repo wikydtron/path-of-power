@@ -1,0 +1,58 @@
+{
+  "upgrades": [
+    {
+      "id": "starting_power",
+      "name": "Starting Power",
+      "description": "Increase starting power by +{value}",
+      "maxLevel": 5,
+      "costs": [50, 100, 200, 400, 800],
+      "values": [1.0, 2.0, 3.0, 5.0, 8.0],
+      "category": "Passive"
+    },
+    {
+      "id": "bonus_gains",
+      "name": "Bonus Gains",
+      "description": "Gain {value} more power from all sources",
+      "maxLevel": 3,
+      "costs": [150, 300, 600],
+      "values": [0.1, 0.25, 0.5],
+      "category": "Passive"
+    },
+    {
+      "id": "iron_will",
+      "name": "Iron Will",
+      "description": "Survive one fatal hit per run with 1 power",
+      "maxLevel": 1,
+      "costs": [200],
+      "values": [1.0],
+      "category": "Ability"
+    },
+    {
+      "id": "overkill",
+      "name": "Overkill",
+      "description": "Gain {value} of overkill margin as bonus power",
+      "maxLevel": 3,
+      "costs": [250, 500, 1000],
+      "values": [0.25, 0.5, 1.0],
+      "category": "Ability"
+    },
+    {
+      "id": "vampirism",
+      "name": "Vampirism",
+      "description": "Absorb {value} additional power from enemies",
+      "maxLevel": 3,
+      "costs": [300, 600, 1200],
+      "values": [0.25, 0.5, 1.0],
+      "category": "Ability"
+    },
+    {
+      "id": "greed",
+      "name": "Greed",
+      "description": "Gold from chests is multiplied by {value}x",
+      "maxLevel": 3,
+      "costs": [100, 200, 400],
+      "values": [2.0, 3.0, 5.0],
+      "category": "Ability"
+    }
+  ]
+}
