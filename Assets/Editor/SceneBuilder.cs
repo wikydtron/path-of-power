@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
-using UnityEngine;
 using System.IO;
+using PathOfPower.Core;
+using PathOfPower.UI;
+using PathOfPower.Dungeon;
+using PathOfPower.Entities;
+using PathOfPower.Upgrades;
 
 /// <summary>
 /// Path of Power — Auto Scene Builder
