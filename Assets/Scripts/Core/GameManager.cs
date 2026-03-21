@@ -41,6 +41,11 @@ namespace PathOfPower.Core
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
+        private void Start()
+        {
+            SceneManager.LoadScene(SCENE_MAIN_MENU);
+        }
+
         private void OnDestroy()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
