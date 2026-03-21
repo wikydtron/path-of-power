@@ -3,39 +3,39 @@
   "name": "The Deep Crypt",
   "biome": "Crypt",
   "startNodeId": 0,
-  "bossNodeId": 16,
+  "bossNodeId": 12,
   "nodes": [
     {
       "id": 0, "type": "Start", "enemyType": "Basic", "power": 0,
       "gridX": 2, "gridY": 0, "connections": [1, 2], "visited": false, "displayName": "Start"
     },
     {
-      "id": 1, "type": "Buff", "enemyType": "Basic", "power": 5,
-      "gridX": 1, "gridY": 1, "connections": [3, 4], "visited": false, "displayName": "+5"
+      "id": 1, "type": "Buff", "enemyType": "Basic", "power": 10,
+      "gridX": 1, "gridY": 1, "connections": [3, 4], "visited": false, "displayName": "+10"
     },
     {
-      "id": 2, "type": "Enemy", "enemyType": "Basic", "power": 1,
-      "gridX": 3, "gridY": 1, "connections": [4, 5], "visited": false, "displayName": "1"
+      "id": 2, "type": "Buff", "enemyType": "Basic", "power": 6,
+      "gridX": 3, "gridY": 1, "connections": [4, 5], "visited": false, "displayName": "+6"
     },
     {
-      "id": 3, "type": "Trap", "enemyType": "Basic", "power": 3,
-      "gridX": 0, "gridY": 2, "connections": [6], "visited": false, "displayName": "-3"
+      "id": 3, "type": "Multiplier", "enemyType": "Basic", "power": 3,
+      "gridX": 0, "gridY": 2, "connections": [6], "visited": false, "displayName": "x3"
     },
     {
-      "id": 4, "type": "Multiplier", "enemyType": "Basic", "power": 3,
-      "gridX": 2, "gridY": 2, "connections": [7], "visited": false, "displayName": "x3"
+      "id": 4, "type": "Trap", "enemyType": "Basic", "power": 5,
+      "gridX": 2, "gridY": 2, "connections": [7], "visited": false, "displayName": "-5"
     },
     {
-      "id": 5, "type": "Enemy", "enemyType": "Tank", "power": 2,
-      "gridX": 4, "gridY": 2, "connections": [8], "visited": false, "displayName": "2"
+      "id": 5, "type": "Enemy", "enemyType": "Tank", "power": 5,
+      "gridX": 4, "gridY": 2, "connections": [8], "visited": false, "displayName": "5"
     },
     {
-      "id": 6, "type": "Buff", "enemyType": "Basic", "power": 15,
-      "gridX": 0, "gridY": 3, "connections": [9], "visited": false, "displayName": "+15"
+      "id": 6, "type": "Enemy", "enemyType": "Basic", "power": 15,
+      "gridX": 0, "gridY": 3, "connections": [9], "visited": false, "displayName": "15"
     },
     {
-      "id": 7, "type": "Enemy", "enemyType": "Basic", "power": 10,
-      "gridX": 2, "gridY": 3, "connections": [9, 10], "visited": false, "displayName": "10"
+      "id": 7, "type": "Buff", "enemyType": "Basic", "power": 40,
+      "gridX": 2, "gridY": 3, "connections": [9], "visited": false, "displayName": "+40"
     },
     {
       "id": 8, "type": "Multiplier", "enemyType": "Basic", "power": 2,
@@ -46,32 +46,16 @@
       "gridX": 1, "gridY": 4, "connections": [11], "visited": false, "displayName": "x2"
     },
     {
-      "id": 10, "type": "Enemy", "enemyType": "Mage", "power": 6,
-      "gridX": 3, "gridY": 4, "connections": [12], "visited": false, "displayName": "Mage 6"
+      "id": 10, "type": "Buff", "enemyType": "Basic", "power": 50,
+      "gridX": 3, "gridY": 4, "connections": [11], "visited": false, "displayName": "+50"
     },
     {
-      "id": 11, "type": "Enemy", "enemyType": "Tank", "power": 20,
-      "gridX": 1, "gridY": 5, "connections": [13], "visited": false, "displayName": "20"
+      "id": 11, "type": "Buff", "enemyType": "Basic", "power": 10,
+      "gridX": 2, "gridY": 5, "connections": [12], "visited": false, "displayName": "+10"
     },
     {
-      "id": 12, "type": "Buff", "enemyType": "Basic", "power": 40,
-      "gridX": 3, "gridY": 5, "connections": [14], "visited": false, "displayName": "+40"
-    },
-    {
-      "id": 13, "type": "Buff", "enemyType": "Basic", "power": 100,
-      "gridX": 1, "gridY": 6, "connections": [15], "visited": false, "displayName": "+100"
-    },
-    {
-      "id": 14, "type": "Multiplier", "enemyType": "Basic", "power": 3,
-      "gridX": 3, "gridY": 6, "connections": [15], "visited": false, "displayName": "x3"
-    },
-    {
-      "id": 15, "type": "Enemy", "enemyType": "Tank", "power": 80,
-      "gridX": 2, "gridY": 7, "connections": [16], "visited": false, "displayName": "80"
-    },
-    {
-      "id": 16, "type": "Boss", "enemyType": "Boss", "power": 450,
-      "gridX": 2, "gridY": 8, "connections": [], "visited": false, "displayName": "BOSS\n450"
+      "id": 12, "type": "Boss", "enemyType": "Boss", "power": 100,
+      "gridX": 2, "gridY": 6, "connections": [], "visited": false, "displayName": "BOSS 100"
     }
   ]
 }
